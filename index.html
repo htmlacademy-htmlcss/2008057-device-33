@@ -9,10 +9,10 @@
     <header class="page-header">
       <h1 class="visually-hidden">Интернет магазин «Девайс</h1>
       <h2 class="header-caption">device</h2>
-      <form>
+      <form action="https://echo.htmlacademy.ru">
         <label>
           <span class="visually-hidden">Поиск</span>
-          <input type="search" name="search-text" placeholder="Текст поиска" />
+          <input type="search" name="search-text" placeholder="Текст поиска" required />
         </label>
         <button type="submit">Найти</button>
       </form>
@@ -33,7 +33,7 @@
       </nav>
       <nav>
         <div class="catalog-expand-button-container">
-          <button class="catalog-expand-button">Каталог товаров</button>
+          <button class="catalog-expand-button" type="button">Каталог товаров</button>
         </div>
         <ul class="navigation-list main-navigation">
           <li class="navigation-item">
@@ -52,11 +52,11 @@
       <section class="populare-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="goods-preview-gallery-container">
-          <button class="slider-button slider-prev">
+          <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
           <img class="slider-image" src="#" alt="#" />
-          <button class="slider-button slider-next">
+          <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
@@ -70,20 +70,20 @@
             замаскированным под стандартную камеру.
           </p>
           <div class="goods-preview-navigation">
-            <a href="">Подробнее</a>
+            <a href="#">Подробнее</a>
             <ol class="goods-slider-pagination">
               <li class="goods-slider-pagination-item">
-                <button class="slider-pagination-button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">1 товар</span>
                 </button>
               </li>
               <li class="goods-slider-pagination-item">
-                <button class="slider-pagination-button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">2 товар</span>
                 </button>
               </li>
               <li class="goods-slider-pagination-item">
-                <button class="slider-pagination-button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">3 товар</span>
                 </button>
               </li>
@@ -102,37 +102,31 @@
         <ul class="goods-categories-list">
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Экшн камеры</h3>
             </a>
           </li>
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Умные часы</h3>
             </a>
           </li>
           <li class="goods-category-card">
             <a class="goods-category-card-link" href="#">
-              <img class="goods-category-card-image" src="#" alt="" />
               <h3 class="goods-category-card-title">Квадрокоптеры</h3>
             </a>
           </li>
@@ -142,13 +136,13 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <button class="services-button">Доставка</button>
+            <button class="services-button" type="button">Доставка</button>
           </li>
           <li class="services-item">
-            <button class="services-button">Гарантия</button>
+            <button class="services-button" type="button">Гарантия</button>
           </li>
           <li class="services-item">
-            <button class="services-button">Кредит</button>
+            <button class="services-button" type="button">Кредит</button>
           </li>
         </ul>
         <div class="services-card">
@@ -158,7 +152,6 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
             ваш этаж.
           </p>
-          <img class="services-logo" src="#" alt="#" />
         </div>
         <div class="delivery-navigation-row">
           <a class="services-navigation-link">
@@ -210,14 +203,14 @@
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
-        <form>
+        <form action="https://echo.htmlacademy.ru">
           <label>
             <span class="visually-hidden">Подписаться на рассылку</span>
             <input
               type="email"
-              required
               name="subscription-email"
               placeholder="Ваш e-mail"
+              required
             />
           </label>
           <button type="submit">Подписаться</button>
