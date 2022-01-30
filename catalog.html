@@ -12,34 +12,29 @@
       <form action="https://echo.htmlacademy.ru">
         <label>
           <span class="visually-hidden">Поиск</span>
-          <input
-            type="search"
-            name="search-text"
-            placeholder="Текст поиска"
-            required
-          />
+          <input type="search" name="search-text" placeholder="Текст поиска" required />
         </label>
         <button type="submit">Найти</button>
       </form>
-      <ul class="navigation-list user-navigation">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
-        </li>
-      </ul>
-      <ul class="navigation-list cart-navigation">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <div class="catalog-expand-button-container">
-        <button class="catalog-expand-button" type="button">
-          Каталог товаров
-        </button>
-      </div>
+      <nav class="navigation">
+        <ul class="navigation-list user-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Войти</a>
+          </li>
+        </ul>
+        <ul class="navigation-list cart-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
       <nav>
+        <div class="catalog-expand-button-container">
+          <button class="catalog-expand-button" type="button">Каталог товаров</button>
+        </div>
         <ul class="navigation-list main-navigation">
           <li class="navigation-item">
             <a class="main-navigation-link" href="#">Доставка</a>
@@ -54,7 +49,7 @@
       </nav>
     </header>
     <main class="main-index">
-      <section class="goods-slider">
+      <section class="populare-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="goods-preview-gallery-container">
           <button class="slider-button slider-prev" type="button">
@@ -106,32 +101,32 @@
         <h2 class="visually-hidden">Популярные категории товаров</h2>
         <ul class="goods-categories-list">
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href=".cat">
               <h3 class="goods-category-card-title">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href="#">
               <h3 class="goods-category-card-title">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href="#">
               <h3 class="goods-category-card-title">Экшн камеры</h3>
             </a>
           </li>
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href="#">
               <h3 class="goods-category-card-title">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href="#">
               <h3 class="goods-category-card-title">Умные часы</h3>
             </a>
           </li>
           <li class="goods-category-card">
-            <a class="goods-category-card-link" href="./catalog.html">
+            <a class="goods-category-card-link" href="#">
               <h3 class="goods-category-card-title">Квадрокоптеры</h3>
             </a>
           </li>
@@ -201,8 +196,8 @@
         </ul>
         <a href="#">Напишите нам</a>
       </section>
-      <section class="newsletter">
-        <h2 class="visually-hidden">Новостная рассылка</h2>
+      <section class="broadcast-subscription">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <span>Подпишитесь на рассылку</span>
         <p>
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
@@ -213,7 +208,7 @@
             <span class="visually-hidden">Подписаться на рассылку</span>
             <input
               type="email"
-              name="subscriber-email"
+              name="subscription-email"
               placeholder="Ваш e-mail"
               required
             />
@@ -246,7 +241,7 @@
             <a class="services-button" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="social-network-list">
+        <ul class="social-list">
           <li class="social-item">
             <a class="social-button" href="#">
               <span class="visually-hidden">Facebook</span>
@@ -266,7 +261,7 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:88128121212"> Тел.: +7 (812) 812-12-12</a>
         <a class="contacts-phone" href="https://htmlacademy.ru/">.html academy</a>
       </section>
     </footer>
