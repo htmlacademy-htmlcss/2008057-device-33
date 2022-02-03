@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+}
+
+/* Common */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+.page-header {
+  color: #ffffff;
+  background-color: #ffe17f;
+}
+.page-footer {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #444444;
+}
+.page-footer a {
+  color: #ffffff;
+}
+.user-navigation-link {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+.button {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+/* TODO: implement this style in the correct way. At the moment, left this to mark strikeout buttons*/
+.strikeout-button {
+  text-decoration: line-through;
+  text-decoration-color: #ffe17f;
+}
+.contacts-address {
+  font-style: normal;
+}
+/* Index page */
+.services,
+.newsletter {
+  color: #444444;
+  background-color: #f0f0f0;
+}
+.goods-tagline,
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+}
+.goods-feature-item {
+  font-size: 16px;
+}
+.goods-feature-metric {
+  font-size: 36px;
+  color: #000000;
+}
+.goods-category-card-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #000000;
+}
+.button.delivery-navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+}
+.delivery-services-name {
+  font-family: "Rubic", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.contacts-subtitle {
+  font-family: "Rubic", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: inherit;
+}
+.contacts-phone-link {
+  color: inherit;
+}
+/* Catalog page */
+.main-catalog {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background-color: #f0f0f0;
+}
+.catalog-header,
+.product-list {
+  color: #000000;
+  background-color: #ffffff;
+}
+.product-list .pagination {
+  color: #444444;
+  background-color: #ebebeb;
+}
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+.catalog-control-group-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+.catalog-filter-title,
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.product-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #444444;
+}
+.button.pagination-show-more-button {
+  font-size: 16px;
+  line-height: 19px;
+}
+.button.pagination-link {
+  font-family: "Rubic", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #444444;
+}
