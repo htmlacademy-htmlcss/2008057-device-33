@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -23,32 +24,32 @@
       </form>
       <ul class="navigation-list user-navigation">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
+          <a class="user-navigation-link" href="#">Войти</a>
         </li>
       </ul>
       <ul class="navigation-list cart-navigation">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+          <a class="user-navigation-link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="user-navigation-link" href="#">Корзина</a>
         </li>
       </ul>
       <div class="catalog-expand-button-container">
-        <button class="catalog-expand-button" type="button">
+        <button class="button" type="button">
           Каталог товаров
         </button>
       </div>
       <nav>
         <ul class="navigation-list main-navigation">
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">Доставка</a>
+            <a class="button" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">Гарантия</a>
+            <a class="button" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="main-navigation-link" href="#">Контакты</a>
+            <a class="button" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -75,7 +76,7 @@
             замаскированным под стандартную камеру.
           </p>
           <div class="goods-preview-navigation">
-            <a href="#">Подробнее</a>
+            <a class="button strikeout-button" href="#">Подробнее</a>
             <ol class="goods-slider-pagination">
               <li class="goods-slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
@@ -141,17 +142,17 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <button class="services-button" type="button">Доставка</button>
+            <button class="button strikeout-button" type="button">Доставка</button>
           </li>
           <li class="services-item">
-            <button class="services-button" type="button">Гарантия</button>
+            <button class="button strikeout-button" type="button">Гарантия</button>
           </li>
           <li class="services-item">
-            <button class="services-button" type="button">Кредит</button>
+            <button class="button strikeout-button" type="button">Кредит</button>
           </li>
         </ul>
         <div class="services-card">
-          <h3 class="services-title">Доставка</h3>
+          <h3 class="section-title">Доставка</h3>
           <p class="services-description">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
@@ -159,13 +160,13 @@
           </p>
         </div>
         <div class="delivery-navigation-row">
-          <a class="services-navigation-link">
+          <a class="button delivery-navigation-link">
             Доставим редкий товар под заказ
           </a>
         </div>
       </section>
       <section class="about-us">
-        <h2>О нас</h2>
+        <h2 class="section-title">О нас</h2>
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.
@@ -179,10 +180,10 @@
           <li><span class="delivery-services-name">СДИК</span></li>
           <li><span class="delivery-services-name">ТоксБерри</span></li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <a class="button strikeout-button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="section-title">Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
@@ -192,18 +193,18 @@
           <p class="contacts-address-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
-          <a class="contacts-phone" href="tel:88128121212">+7(812) 812-12-12</a>
+          <a class="contacts-phone-link" href="tel:88128121212">+7(812) 812-12-12</a>
         </address>
         <h3 class="contacts-subtitle">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a href="#">Напишите нам</a>
+        <a class="button strikeout-button" href="#">Напишите нам</a>
       </section>
       <section class="newsletter">
         <h2 class="visually-hidden">Новостная рассылка</h2>
-        <span>Подпишитесь на рассылку</span>
+        <span class="section-title">Подпишитесь на рассылку</span>
         <p>
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
@@ -218,15 +219,15 @@
               required
             />
           </label>
-          <button type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
           <span>Это бесплатно</span>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-address-section">
+      <section class="contacts-address-section">
         <h2 class="visually-hidden">Адрес</h2>
-        <address class="footer-address">
+        <address class="contacts-address">
           <img class="footer-logo" src="images/icons/device-logo.svg" width="145" height="36" alt="Интернет магазин «Девайс»">
           <p class="contacts-address-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -237,13 +238,13 @@
         <h2 class="visually-hidden">Навигация</h2>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="services-button" href="#">Доставка</a>
+            <a class="button" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="services-button" href="#">Гарантия</a>
+            <a class="button" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="services-button" href="#">Контакты</a>
+            <a class="button" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="social-network-list">
@@ -266,8 +267,10 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="contacts-phone" href="https://htmlacademy.ru/">.html academy</a>
+        <a href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="./images/icons/logo_htmlacademy.svg" width="115" height="33" alt="html academy">
+        </a>
       </section>
     </footer>
   </body>
