@@ -265,3 +265,12 @@ body {
   font-weight: normal;
   color: #444444;
 }
+.catalog-header {
+  padding-left: 60px;
+}
+.catalog-left-column {
+  width: 320px;
+}
+.catalog-right-column {
+  width: 840px;
+}
