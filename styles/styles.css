@@ -22,6 +22,16 @@
 }
 
 /* Common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 html {
   height: 100%;
 }
@@ -56,6 +66,19 @@ body {
 .page-footer a {
   color: #ffffff;
 }
+.footer-logo {
+  display: block;
+  padding-top: 62px;
+  margin-bottom: 35px;
+}
+.header-logo {
+  margin-bottom: 30px;
+  display: block;
+}
+.search-form-wrapper {
+  margin-right: 26px;
+  width: 520px;
+}
 .user-navigation-wrapper {
   display: flex;
 }
@@ -63,6 +86,11 @@ body {
   display: flex;
   width: 1040px;
   margin: 0 auto;
+  margin-bottom: 30px;
+}
+.navigation-list.cart-navigation {
+  justify-content: end;
+  max-width: 240px;
 }
 .main-navigation-wrapper {
   display: flex;
@@ -70,29 +98,63 @@ body {
   margin: 0 auto;
 }
 .catalog-expand-button-container {
-  margin-right: auto;
+  width: 294px;
+}
+.main-navigation-links-wrapper {
+  margin: auto 0;
+  margin-left: auto;
 }
 .navigation-list,
-.goods-categories-list {
+.goods-categories-list,
+.social-network-list,
+.breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.social-network-list {
+  margin: 0 auto;
+  justify-content: center;
 }
 .user-navigation {
   flex-grow: 1;
+}
+.goods-slider {
+  margin-bottom: 70px;
 }
 .user-navigation-link {
   color: #000000;
   text-align: center;
   text-decoration: none;
+  padding: 5px 0;
+}
+.navigation-item:not(:last-child) .user-navigation-link {
+  padding-right: 36px;
+}
+.navigation-list.main-navigation {
+  justify-content: end;
+}
+.catalog-expand-button-container .button {
+  padding: 15px 0;
+}
+.main-navigation .button {
+  padding: 14px 0;
+  padding-left: 45px;
 }
 .index-columns {
   display: flex;
   justify-content: space-between;
 }
 .page-footer-container {
-  display: flex;
   width: 1160px;
   margin: 0 auto;
+}
+.page-footer-sections-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
 }
 .footer-contacts-address-section {
   width: 240px;
@@ -100,6 +162,29 @@ body {
 }
 .footer-contacts-section {
   width: 175px;
+  margin-left: auto;
+}
+.contacts-address-text {
+  margin: 0;
+}
+.footer-navigation-item .button {
+  padding: 10px;
+}
+.footer-navigation-item:not(:last-child) .button {
+  margin-right: 5px;
+}
+.footer-navigation {
+  margin-bottom: 62px;
+}
+.footer-tel-contact,
+.htmlacademy-link {
+  display: block;
+}
+.footer-tel-contact {
+  margin-bottom: 62px;
+}
+.htmlacademy-link img {
+  display: block;
   margin-left: auto;
 }
 .button {
@@ -114,6 +199,15 @@ body {
   text-decoration: none;
   color: #000000;
   letter-spacing: 0.2em;
+}
+.social-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: lawngreen;
+}
+.social-item:not(:last-child) .social-button {
+  margin-right: 15px;
 }
 /* TODO: implement this style in the correct way. At the moment, left this to mark strikeout buttons*/
 .strikeout-button {
@@ -130,6 +224,15 @@ body {
   color: #444444;
   background-color: #f0f0f0;
 }
+.delivery-navigation-row {
+  text-align: center;
+}
+.services {
+  margin-bottom: 70px;
+}
+.main-services-section {
+  margin-bottom: 70px;
+}
 .goods-tagline,
 .section-title {
   font-family: "Raleway", sans-serif;
@@ -137,6 +240,9 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+}
+.goods-categories {
+  margin-bottom: 70px;
 }
 .goods-categories-list {
   display: flex;
@@ -153,6 +259,8 @@ body {
   color: #000000;
 }
 .goods-category-card-title {
+  margin: 0;
+  padding: 0;
   font-size: inherit;
   font-weight: inherit;
 }
@@ -174,6 +282,9 @@ body {
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+}
+.contact-sections {
+  margin-bottom: 70px;
 }
 .contacts-subtitle {
   font-family: "Rubic", sans-serif;
@@ -205,10 +316,28 @@ body {
 .contacts {
   width: 532px;
 }
+.newsletter-top-row {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 144px;
+}
+.newsletter-bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter-form-wrapper {
+  width: 810px;
+}
 .newsletter-content {
   width: 560px;
   margin: 0;
 }
+.newsletter {
+  padding-bottom: 56px;
+}
+
 /* Catalog page */
 .main-catalog {
   font-family: "Rubik", sans-serif;
@@ -218,17 +347,43 @@ body {
   background-color: #f0f0f0;
 }
 .catalog-header,
-.product-list {
+.product-list-wrapper {
   color: #000000;
   background-color: #ffffff;
 }
-.product-list .pagination {
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.catalog-header .section-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.catalog-header {
+  padding: 35px 0;
+}
+.goods-catalog {
+  padding-left: 60px;
+}
+.product-list-wrapper .pagination {
   color: #444444;
   background-color: #ebebeb;
 }
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+  margin-right: 36px;
+}
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.sorting-buttons-wrapper button {
+  width: 30px;
+  height: 30px;
 }
 .catalog-control-group-title {
   font-family: "Raleway", sans-serif;
@@ -269,8 +424,49 @@ body {
   padding-left: 60px;
 }
 .catalog-left-column {
+  padding-top: 25px;
   width: 320px;
 }
 .catalog-right-column {
   width: 840px;
+}
+.show-more-button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.pagination-show-more-button {
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  border: 3px solid #e5e5e5;
+}
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.pagination a {
+  display: block;
+}
+.pagination-item:last-child {
+  margin-left: auto;
+}
+.pagination-item:first-child {
+  margin-right: auto;
+}
+.pagination-prev {
+  padding: 25px;
+}
+.pagination-next {
+  padding: 25px;
+}
+.pagination-link {
+  padding: 10px 15px;
+}
+.product-list-wrapper {
+  padding: 70px 40px 78px 40px;
 }

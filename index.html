@@ -12,13 +12,15 @@
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <img class="header-logo" src="images/icons/device-logo.svg" width="145" height="36" alt="Интернет магазин «Девайс»" />
     <div class="user-navigation-row">
-      <form action="https://echo.htmlacademy.ru">
-        <label>
-          <span class="visually-hidden">Поиск</span>
-          <input type="search" name="search-text" placeholder="Текст поиска" required />
-        </label>
-        <button type="submit">Найти</button>
-      </form>
+      <div class="search-form-wrapper">
+        <form action="https://echo.htmlacademy.ru">
+          <label>
+            <span class="visually-hidden">Поиск</span>
+            <input type="search" name="search-text" placeholder="Текст поиска" required />
+          </label>
+          <button type="submit">Найти</button>
+        </form>
+      </div>
       <ul class="navigation-list user-navigation">
         <li class="navigation-item">
           <a class="user-navigation-link" href="#">Войти</a>
@@ -37,7 +39,7 @@
       <div class="catalog-expand-button-container">
         <button class="button" type="button">Каталог товаров</button>
       </div>
-      <nav>
+      <nav class="main-navigation-links-wrapper">
         <ul class="navigation-list main-navigation">
           <li class="navigation-item">
             <a class="button" href="#">Доставка</a>
@@ -173,12 +175,12 @@
           </div>
         </div>
         <div class="delivery-navigation-row">
-          <a class="button delivery-navigation-link">
+          <a class="button delivery-navigation-link" href="#">
             Доставим редкий товар под заказ
           </a>
         </div>
       </section>
-      <div class="index-columns">
+      <div class="index-columns contact-sections">
         <section class="about-us">
           <h2 class="section-title">О нас</h2>
           <p>
@@ -219,7 +221,7 @@
       </div>
       <section class="newsletter">
         <h2 class="visually-hidden">Новостная рассылка</h2>
-        <div class="index-columns">
+        <div class="newsletter-top-row">
           <span class="section-title">Подпишитесь на рассылку</span>
           <p class="newsletter-content">
             Еженедельный дайджест с обзорами новинок, длительными
@@ -227,66 +229,72 @@
             это вот всё.
           </p>
         </div>
-        <form action="https://echo.htmlacademy.ru">
-          <label>
-            <span class="visually-hidden">Подписаться на рассылку</span>
-            <input type="email" name="subscriber-email" placeholder="Ваш e-mail" required />
-          </label>
-          <button class="button" type="submit">Подписаться</button>
+        <div class="newsletter-bottom-row">
+          <div class="newsletter-form-wrapper">
+            <form action="https://echo.htmlacademy.ru">
+              <label>
+                <span class="visually-hidden">Подписаться на рассылку</span>
+                <input type="email" name="subscriber-email" placeholder="Ваш e-mail" required />
+              </label>
+              <button class="button" type="submit">Подписаться</button>
+            </form>
+          </div>
           <span>Это бесплатно</span>
-        </form>
+        </div>
       </section>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
-      <section class="footer-contacts-address-section">
-        <h2 class="visually-hidden">Адрес</h2>
-        <address class="contacts-address">
-          <img class="footer-logo" src="images/icons/device-logo.svg" width="145" height="36" alt="Интернет магазин «Девайс»" />
-          <p class="contacts-address-text">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </p>
-        </address>
-      </section>
-      <section class="footer-navigation-section">
-        <h2 class="visually-hidden">Навигация</h2>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="button" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="button" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="button" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="social-network-list">
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <span class="visually-hidden">VK</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contacts-section">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="./images/icons/logo_htmlacademy.svg" width="115" height="33" alt="html academy" />
-        </a>
-      </section>
+      <img class="footer-logo" src="images/icons/device-logo.svg" width="145" height="36" alt="Интернет магазин «Девайс»" />
+      <div class="page-footer-sections-wrapper">
+        <section class="footer-contacts-address-section">
+          <h2 class="visually-hidden">Адрес</h2>
+          <address class="contacts-address">
+            <p class="contacts-address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+          </address>
+        </section>
+        <section class="footer-navigation-section">
+          <h2 class="visually-hidden">Навигация</h2>
+          <ul class="navigation-list footer-navigation">
+            <li class="footer-navigation-item">
+              <a class="button" href="#">Доставка</a>
+            </li>
+            <li class="footer-navigation-item navigation-item">
+              <a class="button" href="#">Гарантия</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="button" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="social-network-list">
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts-section">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-tel-contact" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img src="./images/icons/logo_htmlacademy.svg" width="115" height="33" alt="html academy" />
+          </a>
+        </section>
+      </div>
     </div>
   </footer>
 </body>
